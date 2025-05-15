@@ -5,7 +5,9 @@
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dup-check": "jscpd --min-lines 6 --max-size 500 --reporters console core modules index.ts",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -15,6 +17,8 @@
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^9.1.7",
+    "jscpd": "^4.0.5",
     "prettier": "^3.0.0",
     "typescript": "^5.8.3"
   }
