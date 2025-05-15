@@ -7,9 +7,11 @@
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "dup-check": "jscpd --min-lines 6 --max-size 500 --reporters console core modules index.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest --config jest.config.js"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
@@ -18,8 +20,10 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^9.1.7",
+    "jest": "^29.7.0",
     "jscpd": "^4.0.5",
     "prettier": "^3.0.0",
+    "ts-jest": "^29.3.3",
     "typescript": "^5.8.3"
   }
 }
